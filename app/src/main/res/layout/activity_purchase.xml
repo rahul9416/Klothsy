@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Purchase">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="KLOTHSY"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        />
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="735dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="382dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/edit_text_bg"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="205dp"
+                    android:layout_marginTop="70dp"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rupees"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="70dp"
+                    android:text="₹"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="382dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="178dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Order Details"
+                    android:textColor="#0B0A0A"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="154dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Bag Total"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="154dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="180dp"
+                    android:text="Bag Savings"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="154dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="240dp"
+                    android:text="Delivery"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="154dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="300dp"
+                    android:text="Amount Payable"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/bagTotal"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="120dp"
+                    android:textAlignment="center"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/amountPayable"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="300dp"
+                    android:textAlignment="center"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/bagSavings"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="180dp"
+                    android:textAlignment="center"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/delivery"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="240dp"
+                    android:text="60"
+                    android:textAlignment="center"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/confirm_order"
+                    android:layout_width="213dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="400dp"
+                    android:text="Place Order" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

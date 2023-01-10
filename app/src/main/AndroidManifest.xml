@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.organichub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrganicHub">
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity android:name=".MyOrders" />
+        <activity android:name=".Footwear" />
+        <activity android:name=".Bottomwear" />
+        <activity android:name=".Jackets" />
+        <activity android:name=".Tshirts" />
+        <activity android:name=".Shirts" />
+        <activity android:name=".forget" />
+        <activity android:name=".Purchase" />
+        <activity android:name=".wishlistDisplay" />
+        <activity android:name=".Wishlist" />
+        <activity android:name=".Shopping_Cart" />
+        <activity android:name=".Display_page" />
+        <activity android:name=".image" />
+        <activity android:name=".Home" />
+        <activity android:name=".signup" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

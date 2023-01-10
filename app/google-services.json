@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256152072533",
+    "project_id": "organic-hub-c4f17",
+    "storage_bucket": "organic-hub-c4f17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256152072533:android:ab0f37236437ba45a7bfdc",
+        "android_client_info": {
+          "package_name": "com.example.organichub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256152072533-4c7fml5m5sqhf0s8n72lc12u682penul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-TP8BMnAUWjNKLD8p5ndffNdKzbDaKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256152072533-4c7fml5m5sqhf0s8n72lc12u682penul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
